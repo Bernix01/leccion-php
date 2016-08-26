@@ -100,8 +100,8 @@ ALTER TABLE ONLY demo ALTER COLUMN id SET DEFAULT nextval('demo_id_seq'::regclas
 --
 
 COPY demo (id, nombre, pimage) FROM stdin;
-8	Mickeyzxcxzc	/prueba/fotos/img.jpg
-9	Guillermo	/prueba/fotos/img.jpg
+8	Mickeyzxcxzc	/fotos/img.jpg
+9	Guillermo	/fotos/img.jpg
 \.
 
 

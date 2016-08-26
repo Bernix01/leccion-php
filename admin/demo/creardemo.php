@@ -14,8 +14,8 @@ if(isset($_POST["nombre"])){
   $demo->setNombre($_POST["nombre"]);
 
 
-  $uploaddir = '/var/www/html/prueba/fotos/';
-  $pagedir = '/prueba/fotos/'. basename($_FILES['userfile']['name']);
+  $uploaddir = '/var/www/html/fotos/';
+  $pagedir = '/fotos/'. basename($_FILES['userfile']['name']);
   $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
   if(isset($_FILES['userfile']['name']) && $_FILES['userfile']['name'] != ""){
 

@@ -34,8 +34,8 @@ if(isset($_GET["id"])){
     $obj = new Demo();
     $obj->setId($_POST["id"]);
     $obj->setNombre($_POST["nombre"]);
-    $uploaddir = '/var/www/html/prueba/fotos/';
-    $pagedir = '/prueba/fotos/'. basename($_FILES['userfile']['name']);
+    $uploaddir = '/var/www/html/fotos/';
+    $pagedir = '/fotos/'. basename($_FILES['userfile']['name']);
     $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
     if(isset($_FILES['userfile']['name']) && $_FILES['userfile']['name'] != ""){
       if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {

@@ -15,10 +15,10 @@ require 'colectordemo.php';
      <body>
        <?php
        echo "Hola ".$_SESSION['login'];
-       echo"<a href=/prueba/login/logout.php> Salir</a>";
+       echo"<a href=/login/logout.php> Salir</a>";
         ?>
         <br>
-        <a href="/prueba/admin">admin home</a>
+        <a href="/admin">admin home</a>
         <table class="datos">
           <?php
 

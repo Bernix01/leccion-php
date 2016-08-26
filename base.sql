@@ -228,9 +228,9 @@ SELECT pg_catalog.setval('becario_id_seq', 1, false);
 --
 
 COPY demo (id, nombre, pimage) FROM stdin;
-8	Mickeyzxcxzc	/prueba/fotos/VNZVklL7.jpg
-10	Mickey	/prueba/fotos/img.jpg
-11	Mickey	/prueba/fotos/img.jpg
+8	Mickeyzxcxzc	/fotos/VNZVklL7.jpg
+10	Mickey	/fotos/img.jpg
+11	Mickey	/fotos/img.jpg
 \.
 
 
