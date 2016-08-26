@@ -5,10 +5,7 @@
  */
 class Database
 {
-    private static $CONNHST = "localhost";
-    private static $DBNAME = "postgres";
-    private static $DBUSER = "postgres";
-    private static $DBPSW = "root";
+
     private static $connection;
 
     public function __construct()
@@ -33,7 +30,7 @@ class Database
        {
         try
         {
-          self::$connection =  new PDO( "pgsql:host=".self::$CONNHST.";"."dbname=".self::$DBNAME, self::$DBUSER, self::$DBPSW);
+          self::$connection =  new PDO(getenv("DATABASE_URL"));
           self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(PDOException $e)
