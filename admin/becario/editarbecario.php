@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  header("Location: http://localhost/prueba/login/");
+  header("Location: https://leccion-php.herokuapp.com/prueba/login/");
   exit();
 }
 require 'colectorbecario.php';
@@ -36,13 +36,13 @@ if(isset($_GET["id"])){
       if($coll->updateBecario($obj)){
           //var_dump($obj);
 
-          header("Location: http://localhost/prueba/admin/becario");
+          header("Location: https://leccion-php.herokuapp.com/prueba/admin/becario");
           exit();
         }else{
             echo "Hubo un error al intentar actualizar el Becario.";
         }
 
 }else{
-    header("Location: http://localhost/prueba/admin/becario");
+    header("Location: https://leccion-php.herokuapp.com/prueba/admin/becario");
     exit();
 }

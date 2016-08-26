@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  header("Location: http://localhost/prueba/login/");
+  header("Location: https://leccion-php.herokuapp.com/prueba/login/");
   exit();
 }
 require '../programa/colectorprograma.php';

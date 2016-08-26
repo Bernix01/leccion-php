@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  header("Location: http://localhost/prueba/login/");
+  header("Location: https://leccion-php.herokuapp.com/prueba/login/");
   exit();
 }
 require 'colectorprograma.php';
@@ -11,7 +11,7 @@ require 'colectorprograma.php';
 if(isset($_GET["id"])){
 
     $obj = $coll->deletePrograma($_GET["id"]);
-    header("Location: http://localhost/prueba/admin/programa");
+    header("Location: https://leccion-php.herokuapp.com/prueba/admin/programa");
     exit();
 }else{
   echo "Valor no encontrado.";

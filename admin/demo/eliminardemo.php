@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  header("Location: http://localhost/prueba/login/");
+  header("Location: https://leccion-php.herokuapp.com/prueba/login/");
   exit();
 }
 require 'colectordemo.php';
@@ -11,7 +11,7 @@ require 'colectordemo.php';
 if(isset($_GET["id"])){
 
     $obj = $coll->deleteDemo($_GET["id"]);
-    header("Location: http://localhost/prueba/admin/demo");
+    header("Location: https://leccion-php.herokuapp.com/prueba/admin/demo");
     exit();
 }else{
   echo "Valor no encontrado.";

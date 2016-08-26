@@ -10,6 +10,6 @@ if($nombre=="yo" && $clave=="yo"){
 	$_SESSION['login'] = $nombre;
 
 }
-header("Location: http://localhost/prueba/admin/");
+header("Location: https://leccion-php.herokuapp.com/prueba/admin/");
   exit();
 ?>

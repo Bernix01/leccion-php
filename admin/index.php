@@ -13,6 +13,6 @@ if(isset($_SESSION['login'])){
 
   <?php
 }else{
-  header("Location: http://localhost/prueba/login/");
+  header("Location: https://leccion-php.herokuapp.com/prueba/login/");
   exit();
 }
