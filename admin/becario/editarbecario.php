@@ -17,8 +17,8 @@ if(isset($_GET["id"])){
       <div>
         <label for="name">Crear nuevo becario </label>
         <input type="hidden" name="id" value="<?php echo $obj->getId(); ?>">
-        <input type="text" name="nombre" value="Mickey" placeholder="nombre"><br>
-        <input type="text" name="programa" value="Mouse" placeholder="programa"><br>
+        <input type="text" name="nombre" value="<?php echo $obj->getNombre(); ?>" placeholder="nombre"><br>
+        <input type="number" name="programa" value="<?php echo $obj->getPrograma(); ?>" placeholder="programa"><br>
       </div>
       <div class="button">
         <button type="submit">Crear</button>

@@ -30,6 +30,7 @@ class Database
        {
         try
         {
+          echo getenv("DATABASE_URL");
           self::$connection =  new PDO(getenv("DATABASE_URL"));
           self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
