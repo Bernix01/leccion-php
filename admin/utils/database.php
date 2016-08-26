@@ -23,6 +23,7 @@ class Database
     }
 
 
+
     public static function connect()
     {
        // One connection through whole application
@@ -30,8 +31,7 @@ class Database
        {
         try
         {
-          echo getenv("DATABASE_URL");
-          self::$connection =  new PDO(getenv("DATABASE_URL"));
+          self::$connection =  new PDO( "pgsql:host=".getenv("host").";"."dbname=".getenv("dbname"), getenv("user"), getenv("psw"));
           self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(PDOException $e)
