@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  header("Location: https://leccion-php.herokuapp.com/prueba/login/");
+  header("Location: https://leccion-php.herokuapp.com/login/");
   exit();
 }
 require 'colectorprograma.php';
@@ -18,7 +18,7 @@ if(isset($_POST["nombre"])){
       if($vCollector->addPrograma($programa)){
           //var_dump($obj);
 
-          header("Location: https://leccion-php.herokuapp.com/prueba/admin/programa");
+          header("Location: https://leccion-php.herokuapp.com/admin/programa");
           exit();
         }else{
             echo "Hubo un error al intentar agregar el Becario.";

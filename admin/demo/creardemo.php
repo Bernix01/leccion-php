@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  header("Location: https://leccion-php.herokuapp.com/prueba/login/");
+  header("Location: https://leccion-php.herokuapp.com/login/");
   exit();
 }
 require 'colectordemo.php';
@@ -26,7 +26,7 @@ if(isset($_POST["nombre"])){
           if($vCollector->addDemo($demo)){
             //var_dump($obj);
   
-            header("Location: https://leccion-php.herokuapp.com/prueba/admin/demo");
+            header("Location: https://leccion-php.herokuapp.com/admin/demo");
             exit();
           }else{
               echo "Hubo un error al intentar actualizar el Demo.";
@@ -38,7 +38,7 @@ if(isset($_POST["nombre"])){
       if($vCollector->addDemo($demo)){
           //var_dump($obj);
 
-          header("Location: https://leccion-php.herokuapp.com/prueba/admin/demo");
+          header("Location: https://leccion-php.herokuapp.com/admin/demo");
           exit();
         }else{
             echo "Hubo un error al intentar agregar el Demo.";
