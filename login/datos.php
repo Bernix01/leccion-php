@@ -3,7 +3,7 @@ session_start();
 $nombre=$_POST['user'];
 
 $clave=$_POST['pass'];
-
+var_dump($_POST);
 if($nombre=="yo" && $clave=="yo"){
 
 
